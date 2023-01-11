@@ -1,0 +1,26 @@
+:root{
+    --background-color:rgb(19, 197, 19);
+    
+}
+body{
+    background-color: #FFC0CB;
+}
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
+    gap: 20px;
+    max-width: 1200px;
+    place-items: center;
+    
+}
+.box{
+    background-color: var(--background-color);
+    height: 100px;
+    width: 100px;
+    
+}
