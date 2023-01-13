@@ -13,10 +13,12 @@
           text-align: center;
       }
       .row{
-          height: 400px;
+          margin-bottom: 5px;
+         
       }
       .second_row,.third_row {
           display: flex;
+          gap: 5px;
          
       }
     
@@ -25,7 +27,7 @@
           height: 100%;
       }
      
-      .second_row > div{
+      .second_row>div,.third_row>div{
           flex: 1;  /*  each child equal place */
       }
       .third-row-second-column{
@@ -41,43 +43,33 @@
 .second-row-third-container{
     display: flex;
     flex-direction: column;
+    gap: 5px;
 }
 .second-row-third-container div{
     height: calc(50% - 5px/2);
 }
 .third_row{
-    display: grid;
     grid-template-columns: repeat(3,1fr);
 }
  @media screen and (max-width:576px){
-    .second_row{
-       flex-direction: column;   
-    }
-  
-    .third_row{
-        grid-template-columns: repeat(1,1fr);
-    }
-    .third-row-second-column{
-        grid-template-columns: repeat(1,1fr);
-    }
-    .row{
-        height: 400px;
-    }
- }
- @media screen and (min-width:577px) and (max-width:992px){
+ 
     .second_row{
        flex-direction: column; 
     }
-   
     .third_row{
+      display: grid;
         grid-template-columns: repeat(1,1fr);
     }
     .third-row-second-column{
         grid-template-columns: repeat(1,1fr);
     }
-    .row{
+ }
+ @media screen and (min-width:577px) {
+   
+  .row{
         height: 400px;
     }
+    
  }
     
     </style>
@@ -109,20 +101,20 @@
            </div>
            </div>
           </div>
-          <div class=" row third_row">
-            <div>
-                <img src="images/F.jpg" alt="" />
-              </div>
-              <div class="third-row-second-column">
-              <div><img src="images/G.jpg" alt=""></div>
-              <div><img src="images/G.jpg" alt=""></div>
-              <div><img src="images/G.jpg" alt=""></div>
-              <div><img src="images/G.jpg" alt=""></div>
-              </div>
+          <section class="row third_row">
               <div>
-                <img src="images/H.jpg" alt="" />
-              </div>
-          </div>
+                  <img src="images/F.jpg" alt="" />
+                </div>
+                <div class="third-row-second-column">
+                <div><img src="images/G.jpg" alt=""></div>
+                <div><img src="images/G.jpg" alt=""></div>
+                <div><img src="images/G.jpg" alt=""></div>
+                <div><img src="images/G.jpg" alt=""></div>
+                </div>
+                <div>
+                  <img src="images/H.jpg" alt="" />
+                </div>
+          </section>
           
         </div>
       </section>
