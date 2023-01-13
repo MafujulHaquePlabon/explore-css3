@@ -1,0 +1,32 @@
+  /* define grid areas */
+  .header{
+      grid-area: header;
+  }
+  .nav{
+      grid-area: nav;
+  }
+  .main{
+      grid-area: main;
+  }
+  .aside{
+grid-area: aside;
+  }
+  .advertising{
+      grid-area: advertising;
+  }
+  .footer{
+      grid-area: footer;
+  }
+  .header,.nav,.main,.aside,.advertising,.footer{
+      background-color: bisque;
+  }
+  .grid-container{
+      display: grid;
+      gap:20px;
+      grid-template-columns: 1fr 4fr 1fr;
+      grid-template-areas: "header header header header header header"
+      "nav main main main main aside "
+      "nav main main main main advertising"
+      "footer footer footer footer footer footer"
+      ;
+  }
