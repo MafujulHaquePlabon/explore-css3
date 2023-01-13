@@ -30,3 +30,16 @@ grid-area: aside;
       "footer footer footer footer footer footer"
       ;
   }
+
+  @media screen and (max-width:576px) {
+    .grid-container{
+        grid-template-columns: 1fr;
+        grid-template-areas: "header"
+         "nav"
+        "main"
+        "aside"
+        "advertising"
+        "footer";
+    }
+      
+  }
