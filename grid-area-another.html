@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+.item6 { grid-area: f; }
+.item7 { grid-area: g; }
+.item8 { grid-area: h; }
+.item9 { grid-area: i; }
+.item10 { grid-area: j; }
+.item11 { grid-area: k; }
+.item12 { grid-area: l; }
+.item13 { grid-area: m; }
+.item14 { grid-area: n; }
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header menu menu main right right right right right right right right right'
+    'footer footer footer f f f f f f f f f f f'
+    'footer footer footer g g g g g g g g g g g '
+    'h h h i i i i i i i i i i i'
+    'j j j j k k k k k l l l l l'
+    'j j j j k k k k k m m m m m'
+    'j j j j n n n n n n n n n n '
+  ; 
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="item1">a</div>
+        <div class="item2">b</div>
+        <div class="item3">c</div>  
+        <div class="item4">d</div>
+        <div class="item5">e</div>
+        <div class="item6">f</div>
+        <div class="item7">g</div>
+        <div class="item8">h</div>  
+        <div class="item9">i</div>
+        <div class="item10">j</div>
+         <div class="item11">k</div>
+        <div class="item12">l</div>  
+        <div class="item13">m</div>
+        <div class="item14">n</div>
+      </div>
+      
+</body>
+</html>
